@@ -2,7 +2,12 @@ import React from "react";
 import { Route, BrowserRouter } from "react-router-dom";
 
 const PageOne = () => {
-	return <div>Page One</div>;
+	return (
+		<div>
+			Page One
+			<a href="/pagetwo">Page 2</a>
+		</div>
+	);
 };
 
 const PageTwo = () => {
