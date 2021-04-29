@@ -1,11 +1,11 @@
 import React from "react";
-import { Route, BrowserRouter } from "react-router-dom";
+import { Route, BrowserRouter, Link } from "react-router-dom";
 
 const PageOne = () => {
 	return (
 		<div>
 			Page One
-			<a href="/pagetwo">Page 2</a>
+			<Link to="/pagetwo">Page Two</Link>
 		</div>
 	);
 };
@@ -14,7 +14,7 @@ const PageTwo = () => {
 	return (
 		<div>
 			Page Two
-			<button>Click Me</button>
+			<Link to="/">Page One</Link>
 		</div>
 	);
 };
