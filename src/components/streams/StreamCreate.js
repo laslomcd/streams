@@ -24,6 +24,7 @@ class StreamCreate extends React.Component {
 
 	onSubmit = (formValues) => {
 		// Need to do something with values
+		
 		console.log(formValues);
 	};
 
@@ -55,3 +56,5 @@ export default reduxForm({
 	form: "streamCreate",
 	validate: validate,
 })(StreamCreate);
+
+
